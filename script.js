@@ -1,7 +1,9 @@
-document.querySelector("button").addEventListener("click", function(){
+function scrollCars(){
 
-  document.querySelector("#cars").scrollIntoView({
-    behavior:"smooth"
-  });
-
+document
+.getElementById("cars")
+.scrollIntoView({
+behavior:"smooth"
 });
+
+}
