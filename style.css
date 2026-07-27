@@ -1,181 +1,308 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
 
 body{
+    background:#0a0a0a;
+    color:white;
+}
 
-background:#0b0b0b;
-color:white;
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:rgba(0,0,0,0.85);
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:red;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+}
+
+
+nav a:hover{
+    color:red;
+}
+
+
+/* Hero */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.85)
+    ),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+
+
+    background-size:cover;
+    background-position:center;
 
 }
 
 
+.hero h1{
+
+    font-size:70px;
+    color:red;
+    letter-spacing:5px;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+    margin:15px;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:20px;
+
+    padding:15px 40px;
+
+    background:red;
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:5px;
+
+}
+
+
+.btn:hover{
+
+    background:white;
+    color:red;
+
+}
+
+
+
+/* Sections */
+
+section{
+
+    padding:100px 30px;
+
+    text-align:center;
+
+}
+
+
+section h2{
+
+    font-size:40px;
+    margin-bottom:30px;
+
+    color:red;
+
+}
+
+
+section p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* Cars */
+
+.cars{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.car-card{
+
+    background:#171717;
+
+    width:260px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border:1px solid #333;
+
+}
+
+
+.car-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:red;
+
+    transition:.3s;
+
+}
+
+
+
+.car-card h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* Garage */
+
+#garage{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+#garage h2{
+
+    color:red;
+
+}
+
+
+.garage-list p{
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+/* Japan */
+
+.japan{
+
+    background:#111;
+
+}
+
+
+/* Contact */
+
+#contact{
+
+    background:#050505;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    background:black;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#aaa;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
 
 header{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:20px;
-
-background:black;
-
-position:sticky;
-top:0;
+    padding:15px;
 
 }
 
 
 .logo{
 
-font-size:28px;
-font-weight:bold;
-color:red;
+    font-size:22px;
 
 }
-
 
 
 nav a{
 
-color:white;
-text-decoration:none;
-margin:10px;
+    margin-left:8px;
+
+    font-size:12px;
 
 }
-
-
-
-.hero{
-
-height:90vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-
-background:
-linear-gradient(
-rgba(0,0,0,.6),
-rgba(0,0,0,.8)
-),
-url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7");
-
-
-background-size:cover;
-
-}
-
 
 
 .hero h1{
 
-font-size:55px;
-color:red;
+    font-size:40px;
 
 }
-
-
-
-.hero p{
-
-font-size:20px;
-margin:20px;
-
-}
-
-
-
-button{
-
-padding:15px 40px;
-
-background:red;
-
-border:none;
-
-color:white;
-
-cursor:pointer;
-
-}
-
-
-
-section{
-
-padding:60px 20px;
-
-text-align:center;
-
-}
-
-
-
-.cards{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.card{
-
-background:#1c1c1c;
-
-padding:30px;
-
-width:280px;
-
-border-radius:15px;
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-10px);
-
-transition:.3s;
-
-}
-
-
-
-li{
-
-list-style:none;
-
-margin:15px;
-
-font-size:20px;
-
-}
-
-
-
-footer{
-
-background:black;
-
-padding:20px;
-
-text-align:center;
 
 }
