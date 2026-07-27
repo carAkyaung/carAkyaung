@@ -1,1 +1,106 @@
-style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: black;
+}
+
+
+header h1 {
+  color: red;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.6),
+  rgba(0,0,0,.8)
+  ),
+  url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+
+  background-size: cover;
+}
+
+
+.hero h2 {
+  font-size: 45px;
+  color: red;
+}
+
+
+.hero p {
+  margin: 20px;
+  font-size: 18px;
+}
+
+
+button {
+  padding: 12px 30px;
+  background:red;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+
+section {
+  padding: 50px 20px;
+  text-align:center;
+}
+
+
+.cards {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+
+.card {
+  background:#222;
+  padding:25px;
+  width:280px;
+  border-radius:10px;
+}
+
+
+.card:hover {
+  transform:scale(1.05);
+  transition:.3s;
+}
+
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:black;
+}
